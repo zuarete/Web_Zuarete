@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icone_tabela.png">
+    <link rel="stylesheet" href="EstiloTuturial.css">
+    <title>Tabelas</title>
+</head>
+   <body>
+    
+         <section>
+            <div id="a"><h1>Tuturial sobre Tabelas</h1></div>
+            <br>
+            <p>
+                As tabelas são listas de dados em duas dimensões e são compostas por <br>
+                linhas e colunas. Portanto, são muito utilizadas para apresentar dados <br>
+                de uma forma organizada. Um grande exemplo de como as tabelas são importantes <br>
+                é o crescente uso do programa Excel, requisito obrigatório de seleção para  <br>
+                muitas empresas. Mas e para apresentar uma tabela no seu site, como funciona?  <br>
+                Para isso, existe a possibilidade de criar tabelas através do próprio HTML, <br>
+                de forma rápida e simples, por meio de uma tabela HTML.
+            </p>  
+        </section>
+            
+            <br>
+            <section>
+            <div>
+            <h2>Tag <code>table</code></h2>
+            <br>
+            <p>
+                A tag utilizada para criar uma tabela HTML é a tag <code>table</code>, posteriormente <br>
+                fechada com <code>/table</code>. Dentro dela, incluímos todos os elementos que compõem <br>
+                nossa tabela, ou seja, as células da tabela. Assim sendo, os elementos de uma tabela <br>
+                consistem em outras tags que poderão ser utilizadas. Nos próximos tópicos, veremos como <br>
+                utilizar cada uma delas.
+            </p>
+            </div>
+           
+            <div>
+            <h2>A estrutura básica</h2>
+            <br>
+            <p>
+                As tags que vão formar a estrutura básica de uma tabela em HTML  <br>
+                são  <code>tr</code> as tags e <code>td</code>. A tag <code>tr</code> representa uma linha e a tag <code>td</code> <br>
+                representa uma célula. Desta forma, a criação de colunas em uma tabela HTML é feita <br>
+                automaticamente através da quantidade de células incluídas dentro de uma linha. Por <br>
+                exemplo, vejamos na imagem abaixo como essa estrutura é formada:
+            </p>
+            </div>
+            </section>
+
+
+            <br>
+           
+            <br>
+            <img src="img/tabela_1.png" alt="" width="35%">
+            <br>
+
+
+            <br>
+            <h2>Célula de título da tabela HTML</h2>
+            <p>
+                Caso queira incluir uma ou mais células que representem títulos, ganhando um destaque em <br>
+                relação às demais células, pode utilizar a tag <code>th</code>.
+            </p>
+            <img src="img/tabela_2.webp" alt="" width="40%">
+            <br>
+
+
+            <br>
+            <h2>Tags estruturais da tabela</h2>
+            <p>
+                Anteriormente, vimos que a estrutura básica de uma tabela consiste nas tags <code>tr</code>, <code>td</code> e as células de título <br>
+                <code>th</code>. Porém, além dessas, também há tags que servem para estruturar melhor a tabela. São elas:
+                <br>
+                <ul>
+                    <li><b><code>thead</code></b> – Esta tag representa o cabeçalho da tabela, geralmente composta por células título;</li> 
+                    <li><b><code>tbody</code></b> – Essa tag representa o corpo da tabela;</li>
+                    <li><b><code>tfoot</code></b> – Essa tag representa o rodapé da tabela.</li>
+                </ul>
+                Portanto, essas tags tem como principal efeito manter uma semântica adequada para suas tabelas. <br>
+                Sendo assim, vejamos então a seguinte imagem para exemplificar a estrutura de uma tabela:
+            </p>
+            <br>
+            <img src="img/tabela_3.png" alt="" width="35%">
+            <br>
+
+
+            <br>
+            <h2>Criando células vazias</h2>
+            <p>
+                Caso seja necessário incluir uma célula vazia (ou seja: sem nenhum valor dentro) na sua tabela, uma saída seria apenas <br>
+                incluir a <td> ou <th> sem nenhum conteúdo. No entanto, isso não é recomendado, porque alguns navegadores não conseguem ler <br>
+                adequadamente uma célula vazia. Portanto, a solução mais adequada para isso é utilizar a técnica de espaço, incluindo a <br>
+                entidade <code>& nbsp</code>; 
+            </p>
+            <br>
+
+
+            <br>
+            <h2>Células que abrangem mais que uma linha/coluna</h2>
+            <p>
+                Em algumas situações, temos a necessidade de utilizar uma mesclagem de célula, ou seja, criar uma célula que abrange mais <br>
+                do que uma linha ou coluna. Dessa forma, podemos utilizar os atributos colspan e rowspan. O colspan=”x” vai fazer uma <br>
+                mesclagem de colunas, e o rowspan=”x” vai mesclar linhas, bastando substituir o x pelo número de colunas ou linhas que <br>
+                deseja ocupar. Além disso, podemos também mesclar os dois em uma mesma célula. Com isso, vamos ver os exemplos a seguir:
+            </p>
+            <br>
+
+
+            <br>
+            <h2>Título da tabela</h2>
+            <p>
+                A tabela HTML tem uma tag particular para definir um título. Essa tag é a <code>caption</code>. Em contraste com os demais <br>
+                elementos da tabela, a tag <code>caption</code> não será composta por células, portanto ficará acima da tabela, como um título.
+            </p>
+            <br>
+
+            <br>
+
+            <h2>Personalização</h2>
+            <p>
+                Apesar da costumização ser feita pelo CSS, podemos fazer algumas coisas pelo HTML, uma dessas tags é a <code>border</code> que é <br>
+                colocada junto a tag <code>table</code>, para adicionar uma borda simples, mas caso queira modificar as cores é possivel usar a tag <code>style</code> <br>
+                dentro dela é definimos a cor das bordas com a tag <code>borde="cor;"</code>, ou caso queira preencher o fundo é usado <code>background-color="cor;"</code>
+            </p>
+            <br>
+
+            <br>
+
+            <h2>Exemplos</h2>
+            <br>
+            <details>
+                <summary>Horario das Aulas</summary>
+                    <br>
+                    <table border="9" style="border:black;" >
+                    <caption>Horario de aulas</caption>
+                    <tr style="background-color: rgb(178, 179, 178);">
+                        <th>&nbsp;</th>
+                        <th>Segunda</th>
+                        <th>Terça</th>
+                        <th>Quarta</th>
+                        <th>Quinta</th>
+                        <th>Sexta</th>
+                    </tr>
+                    <tr>
+                        <th style="background-color: rgb(178, 179, 178);">7:10 as 8:00</th>
+                        <td rowspan="2" style="background-color: rgb(17, 160, 60)">Biologia Murilo</td>
+                        <td rowspan="2" style="background-color: darkgoldenrod;">História Jailton</td>
+                        <td rowspan="2" style="background-color: rgb(160, 75, 240);">Sociologia Joaquim</td>
+                        <td rowspan="3" style="background-color:rgb(76, 121, 247);">Desenvolvimento Web Francis</td>
+                        <td rowspan="2" style="background-color:rgb(250, 88, 88);">Língua Portuguesa Roger</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: rgb(178, 179, 178);">8:00 as 8:50</th>
+                    </tr>
+                    <tr>
+                        <th style="background-color: rgb(178, 179, 178);">8:50 as 9;40</th>
+                        <td rowspan="2" style="background-color:rgb(182, 178, 154);">Empreendedorismo Charles</td>
+                        <td rowspan="2" style="background-color:rgb(106, 228, 197);">Filosofia Juliano</td>
+                        <td rowspan="2" style="background-color:rgb(247, 152, 75);">Espanhol Roger</td>
+                        <td rowspan="2" style="background-color:rgb(250, 88, 188);">Geografia Fumes</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: rgb(178, 179, 178);">10:00 as 10:50</th>
+                
+                        <td style="background-color:rgb(26, 55, 82);">Matemática Duda</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: rgb(178, 179, 178);">10:50 as 11:40</th>
+                        <td rowspan="2" style="background-color:rgb(255, 203, 248);">Arte Maressa</td>
+                        <td rowspan="2" style="background-color:rgb(26, 55, 82);">Matemática Duda</td>
+                        <td rowspan="2" style="background-color:rgb(30, 36, 43);">Física Couto</td>
+                        <td rowspan="2" style="background-color:rgb(45, 150, 36);">Química Viviane</td>
+                        <td rowspan="2" style="background-color:rgb(255, 255, 255);">Educação Física Stefânia</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: rgb(178, 179, 178);">11:40 as 12:30</th>
+                    </tr>
+                    <tr>
+                        <th style="background-color: rgb(178, 179, 178);">13:35 as 14:25</th>
+                        <td colspan="2" rowspan="3">&nbsp;</td>
+                        <td style="background-color:rgb(250, 88, 88);">Língua Portuguesa Roger</td>
+                        <td colspan="2" rowspan="3">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: rgb(178, 179, 178);">14:25 as 15:15</th>
+                        <td rowspan="2" style="background-color:rgb(54, 31, 31);">Redes e Servidores João</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: rgb(178, 179, 178);">15:30 as 16:20</th>
+                    </tr>
+                </table>
+
+                <br>
+                <h3>Codigo usado</h3>
+                <br>
+                <img src="img/Captura de tela 2024-04-21 200605.png" alt="" width="35%">
+                <br>
+                <img src="img/Captura de tela 2024-04-21 200712.png" alt="" width="35%">
+                <br>
+
+            </details>
+
+            <br>
+
+            <details> 
+               <summary>Rotina Pessoal</summary> 
+                    <br>
+                    <table border="2" style="border: rgb(3, 66, 3);">
+                        <tr>
+                            <caption><b>Minha Rotina</b></caption>
+                            <th>&nbsp;</th>
+                            <th>Segunda</th>
+                            <th>Terça</th>
+                            <th>Quarta</th>
+                            <th>Quinta</th>
+                            <th>Sexta</th>
+                            <th>Sabado</th>
+                            <th>Domingo</th>
+                        </tr>
+                        <tr>
+                            <td>5 AM</td>
+                            <td>Acordar</td>
+                            <td>Acordar</td>
+                            <td>Acordar</td>
+                            <td>Acordar</td>
+                            <td>Acordar</td>
+                            <td rowspan="2">Dormir</td>
+                            <td rowspan="2">Dormir</td>
+                        </tr>
+                        <tr>
+                            <td>6 AM</td>
+                            <td>Transporte</td>
+                            <td>Transporte</td>
+                            <td>Transporte</td>
+                            <td>Transporte</td>
+                            <td>Transporte</td>
+                        </tr>
+                        <tr>
+                            <td>7 AM</td>
+                            <td rowspan="6">IF</td>
+                            <td rowspan="6">IF</td>
+                            <td rowspan="6">IF</td>
+                            <td rowspan="6">IF</td>
+                            <td rowspan="6">IF</td>
+                            <td rowspan="5">Matemática</td>
+                            <td rowspan="5">Matemática</td>
+                        </tr>
+                        <tr>
+                            <td>8 AM</td>
+                        </tr>
+                        <tr>
+                            <td>9 AM</td>
+                        </tr>
+                        <tr>
+                            <td>10 AM</td>
+                        </tr>
+                        <tr>
+                            <td>11 AM</td>
+                        </tr>
+                        <tr>
+                            <td>12 AM</td>
+                            <td>Almoço</td>
+                            <td>Almoço</td>
+                        </tr>
+                        <tr>
+                            <td>1 PM</td>
+                            <td>Transporte</td>
+                            <td>Transporte</td>
+                            <td>Almoço/IF</td>
+                            <td>Almoço</td>
+                            <td>Transporte</td>
+                            <td rowspan="4">Lazer</td>
+                            <td rowspan="4">Lazer</td>
+                        </tr>
+                        <tr>
+                            <td>2 PM</td>
+                            <td>Comer/Louça</td>
+                            <td>Comer/Louça</td>
+                            <td rowspan="2">IF</td>
+                            <td >Free Time</td>
+                            <td>Comer/Louça</td>
+                        </tr>
+                        <tr>
+                            <td>3 PM</td>
+                            <td>Treino</td>
+                            <td>Treino</td>
+                            <td rowspan="2">Basquete</td>
+                            <td rowspan="2">Free Time</td>
+                        </tr>
+                        <tr>
+                            <td>4 PM</td>
+                            <td>Banho/quarto</td>
+                            <td>Banho/quarto</td>
+                            <td>Free Time</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>5 PM</td>
+                            <td>Escola</td>
+                            <td>Escola</td>
+                            <td rowspan="2">Free Time</td>
+                            <td rowspan="2">Free Time</td>
+                            <td>Escola</td>
+                            <td>Comer</td>
+                            <td>Comer</td>
+                        </tr>
+                        <tr>
+                            <td>6 PM</td>
+                            <td>Comer</td>
+                            <td>Comer</td>
+                            <td>Comer</td>
+                            <td rowspan="3">Curso IFRS</td>
+                            <td rowspan="3">Curseira</td>
+                        </tr>
+                        <tr>
+                            <td>7 PM</td>
+                            <td rowspan="2">Matemática</td>
+                            <td rowspan="2">Matemática</td>
+                            <td>Transporte</td>
+                            <td>Transporte</td>
+                            <td rowspan="2">Matemática</td>
+                        </tr>
+                        <tr>
+                            <td>8 PM</td>
+                            <td>Arrumar</td>
+                            <td>Arrumar</td>
+                        </tr>
+                        <tr>
+                            <td>9 PM</td>
+                            <td>Lazer</td>
+                            <td>Lazer</td>
+                            <td>Escola</td>
+                            <td>Lazer</td>
+                            <td>Lazer</td>
+                            <td rowspan="2">Lazer</td>
+                            <td rowspan="2">Lazer</td>
+                        </tr>
+                        <tr>
+                            <td>10 PM</td>
+                            <td>Mochila</td>
+                            <td>Mochila</td>
+                            <td>Mochila</td>
+                            <td>Mochila</td>
+                            <td>Mochila</td>
+                        </tr>
+
+                    </table>
+                    <br>
+                    <h4>Codigo Usado</h4>
+                    <br>
+                    <img src="img/ex02_01.png" alt="" width="35%">
+                    <br>
+                    <img src="img/ex02_02.png" alt="" width="35%">
+                    <br>
+                    <img src="img/ex02_03.png" alt="" width="35%">
+                    <br>
+                    <img src="img/ex02_04.png" alt="" width="35%">
+                    <br>
+
+            </details> 
+            <br>
+            <details>
+                <summary>Dieta Semanal</summary>
+                <br>
+                    <table  border="2" style="border-color: black;">
+                        <caption><font color="green"><b>Dieta Semanal</b></font></caption>
+                        <tr style="background-color: rgb(190, 156, 223);">
+                            <th>Refeição</th>
+                            <th>Segunda</th>
+                            <th>Terça</th>
+                            <th>Quarta</th>
+                            <th>Quinta</th>
+                            <th>Sexta</th>
+                        </tr>
+                        <tr>
+                            <th style="background-color: rgb(190, 156, 223);">
+                                Café da Manhã</th>
+                            <td style="background-color: coral;">Leite</td>
+                            <td style="background-color: cornflowerblue;">Fruta</td>
+                            <td style="background-color: lightgreen;">Cereais</td>
+                            <td style="background-color: coral;">Leite</td>
+                            <td style="background-color: cornflowerblue;">Fruta</td>
+                        </tr>
+                        <tr>
+                            <th style="background-color: rgb(190, 156, 223);">
+                                Almoço</th>
+                            <td style="background-color: brown;">Carne</td>
+                            <td style="background-color: rgb(72, 184, 105);">Massa</td>
+                            <td style="background-color: brown;">Carne</td>
+                            <td style="background-color: orangered;">Verdura</td>
+                            <td style="background-color: rgb(72, 184, 105);">Massa</td>
+                        </tr>
+                        <tr>
+                            <th style="background-color: rgb(190, 156, 223);">
+                                Lanche da Tarde</th>
+                            <td style="background-color: cornflowerblue;">Fruta</td>
+                            <td style="background-color: cornflowerblue;">Fruta</td>
+                            <td style="background-color: cornflowerblue;">Fruta</td>
+                            <td style="background-color: cornflowerblue;">Fruta</td>
+                            <td style="background-color: cornflowerblue;">Fruta</td>
+                        </tr>
+                        <tr>
+                            <th style="background-color: rgb(190, 156, 223);"> 
+                                Jantar</th>
+                            <td style="background-color: darkorchid;">Ovos</td>
+                            <td style="background-color: darkorchid;">Ovos</td>
+                            <td style="background-color: rgb(222, 247, 85);">Lácteos</td>
+                            <td style="background-color: rgb(222, 247, 85);">Lácteos</td>
+                            <td style="background-color: lightgreen;">Cereais</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <h2>Codigo Usado</h2>
+                    <br>
+                    <img src="img/ex03_01.png" alt="" width="35%">
+                    <br>
+                    <img src="img/ex03_02.png" alt="" width="35%">
+                    <br>
+                    <img src="img/ex03_03.png" alt="" width="35%">
+                    <br>
+
+            </details>
+            <br>
+            <details>
+                <summary>Preços de Mercado</summary>
+                <br>
+                    <table border="2" style="border-color: black;">
+                    <tr style="background-color: aquamarine;">
+                        <th>Produto</th>
+                        <th>Mercado 1</th>
+                        <th>Mercado 2</th>
+                        <th>Mercado 3</th>
+                        <th>Mercado 4</th>
+                    </tr>
+                    <tr style="background-color: rgb(190, 219, 245);">
+                        <th style="background-color: cornflowerblue;">Arroz</th>
+                        <td>R$ 10,00</td>
+                        <td>R$ 10,50</td>
+                        <td>R$ 11,00</td>
+                        <td>R$ 11,50</td>
+                    </tr>
+                    <tr style="background-color: rgb(85, 70, 65);">
+                        <th style="background-color: cornflowerblue;">Feijão</th>
+                        <td>R$ 5,50</td>
+                        <td>R$ 6,00</td>
+                        <td>R$ 6,50</td>
+                        <td>R$ 3,50</td>
+                    </tr>
+                    <tr style="background-color: rgb(190, 219, 245);">
+                        <th style="background-color: cornflowerblue;">Farinha</th>
+                        <td>R$ 4,90</td>
+                        <td>R$ 4,00</td>
+                        <td>R$ 2,90</td>
+                        <td>R$ 4,00</td>
+                    </tr>
+                    <tr style="background-color: rgb(85, 70, 65);">
+                        <th style="background-color: cornflowerblue;">Melancia</th>
+                        <td>R$ 6,70</td>
+                        <td>R$ 5,60</td>
+                        <td>R$ 8,90</td>
+                        <td>R$ 5,78</td>
+                    </tr>
+                    <tr style="background-color: rgb(190, 219, 245);">
+                        <th style="background-color: cornflowerblue;">Laranja</th>
+                        <td>R$ 4,90</td>
+                        <td>R$ 5,78</td>
+                        <td>R$ 6,50</td>
+                        <td>R$ 4,00</td>
+                    </tr>
+                    </table>
+                    <br>
+                    <img src="img/ex04_01.png" alt="" width="35%">
+                    <br>
+                    <img src="img/ex04_02.png" alt="" width="35%">
+                    <br>
+                    <img src="img/ex04_03.png" alt="" width="35%">
+                    <br>
+            </details>
+            <br>
+            <details>
+                <Summary>Tabela de RH</Summary>
+                <br>
+                    <table border="2" style="border-color: black;">
+                        <caption>Informações da Equipe</caption>
+                        <tr style="background-color: rgb(26, 126, 16);">
+                            <th>Nome</th>
+                            <th>Cargo</th>
+                            <th>Nascimento</th>
+                            <th>Taxa de Presença</th>
+                            <th>Salário base</th>
+                            <th>Avaliação</th>
+                        </tr>
+                        <tr style="background-color: lightgray;">
+                            <td>João Maria de Jesus</td>
+                            <td>Administrativo</td>
+                            <td>23/07/78</td>
+                            <td>80.2</td>
+                            <td>R$ 10.600,00</td>
+                            <td>8,7</td>
+                        </tr>
+                        <tr style="background-color: rgb(203, 240, 203);">
+                            <td>Felipe dos Santos</td>
+                            <td>Técnico</td>
+                            <td>02/11/88</td>
+                            <td>90</td>
+                            <td>R$ 18.200,00</td>
+                            <td>5,6</td>
+                        </tr>
+                        <tr style="background-color: lightgray;">
+                            <td>Maria José Silva</td>
+                            <td>Técnico</td>
+                            <td>23/12/90</td>
+                            <td>87.3</td>
+                            <td>R$ 15.000,00</td>
+                            <td>4,5</td>
+                        </tr>
+                        <tr style="background-color: rgb(203, 240, 203);">
+                            <td>José Silva</td>
+                            <td>Administrativo</td>
+                            <td>23/12/78</td>
+                            <td>60</td>
+                            <td>R$ 16.200,00</td>
+                            <td>9,3</td>
+                        </tr>
+                        <tr style="background-color: lightgray;">
+                            <td>Mário Antunes</td>
+                            <td>RH</td>
+                            <td>11/02/77</td>
+                            <td>54.2</td>
+                            <td>R$ 8.000,00</td>
+                            <td>7,2</td>
+                        </tr>
+                        <tr style="background-color: rgb(203, 240, 203);">
+                            <td>Paulo Roberto Silva</td>
+                            <td>RH</td>
+                            <td>13/10/76</td>
+                            <td>87.23</td>
+                            <td>R$ 8.900,00</td>
+                            <td>9,9</td>
+                        </tr>
+                    </table>
+                <br>
+                <h2>Codigo Usado</h2>
+                <img src="img/ex05_01.png" alt="" width="35%">
+                <br>
+                <img src="img/ex05_02.png" alt="" width="35%">
+                <br>
+                <img src="img/ex05_01.png" alt="" width="35%">
+                <br>
+            </details>
+
+
+
+
+
+
+<br>
+
+
+            <br>
+            <hr color="black">
+            <br>
+            <a href="https://www.homehost.com.br/blog/criar-sites/tabela-html/">Site de referencia</a>
+
+       
+    
+</body>
+</html>
