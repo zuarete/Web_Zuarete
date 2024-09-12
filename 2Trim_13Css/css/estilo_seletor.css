@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(158, 158, 226);
+}
+
+div{
+    display: block;
+    background-color: rgb(158, 81, 230);
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.quadro_01{
+    background-color: darkslateblue;
+    border: 1px solid rgb(255, 205, 255);
+}
+
+.quadro_02{
+    background-color: rgb(198, 181, 226);
+    width: 250px;
+    color: white;
+}
+
+.quadro_03{
+    background-color: rgb(207, 118, 145);
+    border-radius: 25px;
+}
+
+.quadro_04{
+    height: 150px;
+    width: 170px;
+}
+
+img{
+    height: 150px;
+    width: 170px; 
+}

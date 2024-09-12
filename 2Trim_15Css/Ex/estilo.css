@@ -1,0 +1,65 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    color: rgb(104, 102, 100);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.parallax1{
+    position: relative;
+    background-image: url("img/Fundo_friends.jpg");
+    height: 100%;
+    opacity: 0.75;
+    background-attachment: fixed ; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2{
+    position: relative;
+    background-image: url("img/Fundo_Trigo.jpg");
+    height: 100%;
+    opacity: 0.75;
+    background-attachment: fixed ; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3{
+    position: relative;
+    background-image: url("img/Fundo_Individual.jpg");
+    height: 100%;
+    opacity: 0.75;
+    background-attachment: fixed ; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.estilo-box{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+}
+
+.estilo-texto{
+
+    font-size: 60px;
+    background-color: rgba(0, 0, 0);
+}
+
+.box1{
+    background-color: white;
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.box2{
+    text-align: center;
+    background-color: white;
+    padding: 50px 80px;
+}

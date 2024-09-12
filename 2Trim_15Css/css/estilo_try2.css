@@ -1,0 +1,75 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #777;
+}
+
+.parallax1{
+    position: relative;
+    background-image: url("../Img/img_parallax.jpg");
+    height: 100%;
+    opacity: 0.65;
+    background-attachment: fixed ; /*Fixa a imagem e deixa o hyperlink e outros elementos da pagina "Rolling"*/
+    background-position: center; /*Posiciona a imagem de forma centralizada mesmo que o navegador seja redimencionado*/
+    background-repeat: no-repeat;/*Caso a tela seja maior que a imagem, não permite que a imgem se repita*/
+    background-size: cover;/*Redimenciona o background conforme a tela do dispositivo mantendo a proporção*/
+}
+
+.caption{
+    /*Define a posição como abusuluta*/
+    position: absolute;
+    left: 0;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+}
+
+.caption span.border{
+    /*Altera caracteristicas do texto. Cor do fundo, cor do texto, espaçamento, borda, tamanho da fonte e espaçamento entre caracteres*/
+    background-color: #111;
+    padding: 20px;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.parallax2{
+    position: relative;
+    background-image: url("../Img/img_parallax2.jpg");
+    opacity: 0.75;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3{
+    position: relative;
+    background-image: url("../Img/img_parallax3.jpg");
+    opacity: 0.75;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box1{
+    background-color: white;
+    text-align: justify;
+    padding: 50px 80px;
+
+}
+
+.box1 h3{
+    text-align: center;
+}
+
+.box2{
+    color: white;
+    background-color: #5f5454;
+    text-align: center;
+    padding: 50px 80px;
+}

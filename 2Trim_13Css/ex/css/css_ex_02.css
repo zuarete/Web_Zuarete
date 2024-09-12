@@ -1,0 +1,111 @@
+.it{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    height: 300px;
+    width: 40%;
+}
+
+.it_01{
+    width: 33.33%;
+    background-color: rgb(3, 151, 11);
+    height: 300px;
+    margin: 0px;
+}
+
+.it_02{
+    padding-left: 0px;
+    width: 33.33%;
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    margin: 0px;
+}
+
+.it_03{
+    width: 33.33%;
+    background-color: rgb(255, 12, 12);
+    height: 300px;
+}
+
+.p{
+    border: 1px solid black;
+    height: 300px;
+    width: 40%;
+}
+
+.p_01{
+    background-color: white;
+    height: 150px;
+    width: 100%;
+}
+
+.p_02{
+    background-color: rgb(255, 0, 0);
+    height: 150px;
+    width: 100%;
+}
+
+.b{
+    border: 1px solid black;
+    height: 300px;
+    width: 40%;
+}
+
+.b_01{
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    width: 100%;
+}
+
+.b_02{
+    background-color: rgb(255, 0, 0);
+    height: 100px;
+    width: 100%;
+}
+
+.b_03{
+    background-color: rgb(222, 241, 42);
+    height: 100px;
+    width: 100%;
+}
+
+.al{
+    display: flex;
+    height: 300px;
+    width: 40%;
+}
+
+.al_01{
+    width: 33.33%;
+    background-color: rgb(0, 0, 0);
+    height: 300px;
+    margin: 0px;
+}
+
+.al_02{
+    padding-left: 0px;
+    width: 33.33%;
+    background-color: rgb(233, 247, 110);
+    height: 300px;
+    margin: 0px;
+}
+
+.al_03{
+    width: 33.33%;
+    background-color: rgb(255, 12, 12);
+    height: 300px;
+}
+
+.i{
+    background-color: red;
+    height: 300px;
+    width: 40%;
+}
+
+.i_01{
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 120px;
+    width: 45%;
+}
